@@ -22,11 +22,15 @@ double naturalLogarithm(double value);
 double customBaseLogarithm(double value, double base);
 
 // Main function
+
+
 int main() {
     double num1, num2, result;
     char operator;
 
-    printf("Enter an expression: ");
+    printf("Ingrese una expresion: (Ejemplo: 2 + 3)\n");
+    printf("Operadores validos: +, -, *, /, s (seno), c(coseno), t(tangente), a(arooseno), b(logaritmo)\n");
+    printf("Para los operadores s, c, t, a, b, ingrese un numero y el operador.\n");
     scanf("%lf %c %lf", &num1, &operator, &num2);
 
     switch (operator) {
@@ -60,11 +64,11 @@ int main() {
             result = logarithm(num1);
             break;
         default:
-            printf("Invalid operator.\n");
+            printf("Operador Invalido.\n");
             return 1;
     }
 
-    printf("Result: %lf\n", result);
+    printf("Resultado: %lf\n", result);
 
     return 0;
 }
