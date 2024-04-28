@@ -23,6 +23,9 @@ double customBaseLogarithm(double value, double base);
 
 // Main function
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846 
+#endif
 
 int main() {
     double num1, num2, result;
